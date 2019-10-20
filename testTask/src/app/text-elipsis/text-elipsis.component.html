@@ -1,2 +1,5 @@
-<div>{{text}}</div>
-<div>Число отображаемых строк: {{num}}</div>
+<div class = "parent">
+  <div [ngClass]="[ num < count ? 'ellipseTrue' : 'ellipseFalse']" [ngStyle]="{'-webkit-line-clamp': num}">{{text}}</div>
+  <div style="flex:1">Число отображаемых строк: {{num}}</div>
+  <div style="flex:1">Всего строк: {{count}}</div>
+</div>

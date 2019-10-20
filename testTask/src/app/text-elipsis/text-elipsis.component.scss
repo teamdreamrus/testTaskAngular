@@ -1,0 +1,28 @@
+
+.ellipseTrue{
+  flex:1;
+  display: -webkit-box;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+.ellipseFalse{
+  display: flex;
+  flex:1;
+  max-width: 100%;
+  height: 43px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-box-orient: vertical;
+  white-space: pre;
+}
+.parent{
+  display: flex;
+}

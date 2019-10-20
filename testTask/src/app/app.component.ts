@@ -9,11 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   text = '';
   num = 0;
-  count = 0;
   appTitle = 'angular test task';
   inputText(event: any) {
     this.text = event.target.value;
-    this.count = this.text.split(/\r|\r\n|\n/).length;
   }
   inputNumber(event: any) {
     this.num = event.target.value;
