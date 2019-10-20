@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-text-elipsis',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./text-elipsis.component.scss']
 })
 export class TextElipsisComponent implements OnInit {
+@Input() text: string;
+@Input() num: number;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
