@@ -7,8 +7,15 @@
   margin-bottom: 5px;
 }
 .text{
-  flex:1;
-  display: flex;
+  display: block;
   width: 400px;
-  height: 150px;
+  height: auto;
+  resize: none;
+  overflow: hidden;
 }
+
+*{
+  font-size: 14px;
+  font-family: "Courier New";
+}
+

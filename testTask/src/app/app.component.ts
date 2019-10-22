@@ -11,7 +11,7 @@ export class AppComponent {
   num = 0;
   appTitle = 'angular test task';
   inputText(event: any) {
-    this.text = event.target.value;
+    this.text = event.target.value.replace(/\n\r?/g, '\n');
   }
   inputNumber(event: any) {
     this.num = event.target.value;
